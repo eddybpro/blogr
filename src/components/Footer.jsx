@@ -28,7 +28,7 @@ function Footer() {
         </ul>
       </div>
       <div className="FooterContainer-LinkBox">
-        <h3 className="FooterContainer-LinkBox-Title">Company</h3>
+        <p className="FooterContainer-LinkBox-Title">Company</p>
         <ul className="FooterContainer-LinkBox-SubLinksBox">
           <li>
             <a href="#">About</a>
@@ -45,7 +45,7 @@ function Footer() {
         </ul>
       </div>
       <div className="FooterContainer-LinkBox">
-        <h3 className="FooterContainer-LinkBox-Title">Connect</h3>
+        <p className="FooterContainer-LinkBox-Title">Connect</p>
         <ul className="FooterContainer-LinkBox-SubLinksBox">
           <li>
             <a href="#">Contact</a>
