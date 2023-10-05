@@ -4,11 +4,11 @@ import { Logo } from "../assets";
 function Footer() {
   return (
     <footer className="FooterContainer">
-      <a href="#" className="FooterContainer-Logo">
+      <a href="#" className="FooterContainer-Logo" aria-label="blogr">
         <img src={Logo} alt="" />
       </a>
       <div className="FooterContainer-LinkBox">
-        <h3 className="FooterContainer-LinkBox-Title">Product</h3>
+        <p className="FooterContainer-LinkBox-Title">Product</p>
         <ul className="FooterContainer-LinkBox-SubLinksBox">
           <li>
             <a href="#">Overview</a>

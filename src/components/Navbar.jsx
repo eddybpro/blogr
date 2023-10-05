@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav>
-      <a href="#" className="Logo">
+      <a href="#" className="Logo" aria-label="blogr">
         <img src={Logo} alt="" />
       </a>
       <div className="Menu">
