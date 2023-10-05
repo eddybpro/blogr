@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(208, 49%, 24%);
+  --color-brand-2: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(207, 13%, 34%);
+  --color-brand-4: hsl(240, 2%, 79%);
+  --color-brand-5: hsl(356, 100%, 66%);
+
+  --color-site-1-1: hsl(13, 100%, 72%);
+  --color-site-1-2: hsl(353, 100%, 62%);
+  --color-site-2-1: hsl(237, 17%, 21%);
+  --color-site-2-2: hsl(237, 23%, 32%);
+  --color-site-3: hsl(240, 10%, 16%);
+  --color-site-4: hsl(355, 100%, 74%);
+
+  --font-overpass: "Overpass", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.FeaturesContainer {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.FeaturesContainer-ImgBox {
+  width: 100%;
+}
+
+.FeaturesContainer-ImgBox > picture > img {
+  width: 100%;
+  height: 100%;
+}
+
+.FeaturesContainer-TxtBox-Title {
+  font-size: 2.8rem;
+  color: var(--color-brand-1);
+  font-family: var(--font-overpass);
+  margin-bottom: 2rem;
+}
+
+.FeaturesContainer-TxtBox-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+  line-height: 2.5rem;
+  font-family: var(--font-ubuntu);
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .FeaturesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 22rem;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .FeaturesContainer-ImgBox {
+    transform: translateX(-20.5rem);
+  }
+
+  .FeaturesContainer-TxtBox-Title {
+    font-size: 4rem;
+  }
+}

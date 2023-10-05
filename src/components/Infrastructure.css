@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(208, 49%, 24%);
+  --color-brand-2: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(207, 13%, 34%);
+  --color-brand-4: hsl(240, 2%, 79%);
+  --color-brand-5: hsl(356, 100%, 66%);
+
+  --color-site-1-1: hsl(13, 100%, 72%);
+  --color-site-1-2: hsl(353, 100%, 62%);
+  --color-site-2-1: hsl(237, 17%, 21%);
+  --color-site-2-2: hsl(237, 23%, 32%);
+  --color-site-3: hsl(240, 10%, 16%);
+  --color-site-4: hsl(355, 100%, 74%);
+
+  --font-overpass: "Overpass", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.InfraContainer {
+  background: url("../assets/bg-pattern-circles.svg"),
+    linear-gradient(var(--color-site-2-1), var(--color-site-2-2));
+  background-position: top -24rem left 50%, center;
+  background-size: 160% 110%, cover;
+  background-repeat: no-repeat, no-repeat;
+  border-top-right-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  padding: 2rem 2rem 12rem;
+  text-align: center;
+}
+
+.InfraContainer-ImgBox {
+  width: 100%;
+  height: 100%;
+  margin-top: -18rem;
+}
+
+.InfraContainer-ImgBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+.InfraContainer-TxtBox-Title {
+  color: var(--color-brand-2);
+  font-size: 3.6rem;
+  line-height: 4.9rem;
+  font-family: var(--font-overpass);
+  margin-bottom: 2rem;
+}
+
+.InfraContainer-TxtBox-Para {
+  color: var(--color-brand-4);
+  line-height: 2.5rem;
+  font-family: var(--font-ubuntu);
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .InfraContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+    background: url("../assets/bg-pattern-circles.svg"),
+      linear-gradient(var(--color-site-2-1), var(--color-site-2-2));
+    background-position: top -22rem left -18rem, center;
+    background-size: 60% 150%, cover;
+    background-repeat: no-repeat, no-repeat;
+    text-align: left;
+    position: relative;
+    height: 36.5rem;
+  }
+
+  .InfraContainer-ImgBox {
+    margin-top: -8rem;
+  }
+
+  .InfraContainer-TxtBox-Title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-top: 10rem;
+  }
+}
